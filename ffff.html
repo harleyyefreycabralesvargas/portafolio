@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio Harley</title>
+  <style>
+    :root {
+      --primary: #111;
+      --accent: #00796b;
+      --bg-color: #ffffff;
+      --text-color: #000000;
+      --nav-bg: #111111;
+      --link-color: #ffffff;
+    }
+
+    body.dark-mode {
+      --bg-color: #111111;
+      --text-color: #ffffff;
+      --nav-bg: #ffffff;
+      --link-color: #111111;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: var(--nav-bg);
+      padding: 10px 0;
+      z-index: 1000;
+      transition: background 0.3s;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      color: var(--link-color);
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: var(--link-color);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.5rem 0.75rem;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: #444;
+    }
+
+    #menu-toggle { display: none; }
+    .menu-icon {
+      display: none;
+      font-size: 1.5rem;
+      color: var(--link-color);
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .dark-toggle {
+      background: none;
+      border: 2px solid var(--link-color);
+      color: var(--link-color);
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .dark-toggle:hover {
+      background: var(--link-color);
+      color: var(--nav-bg);
+    }
+
+    main { margin-top: 60px; }
+
+    section {
+      padding: 80px 20px;
+      text-align: center;
+      min-height: 100vh;
+    }
+
+    #inicio   { background: var(--bg-color); }
+    #skills   { background: var(--bg-color); }
+    #proyectos{ background: var(--bg-color); }
+    #estudios { background: var(--bg-color); }
+    #contacto { background: var(--bg-color); }
+
+    .skills {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .skills li {
+      background: var(--accent);
+      color: white;
+      padding: 10px 15px;
+      border-radius: 8px;
+    }
+
+    .card {
+      background: #fff;
+      color: #000;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    body.dark-mode .card {
+      background: #333;
+      color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      .menu-icon { display: block; }
+
+      nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: var(--nav-bg);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+      }
+
+      #menu-toggle:checked + .menu-icon + nav ul {
+        max-height: 300px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      section { padding: 60px 15px; }
+      h1 { font-size: 1.5rem; }
+      h2 { font-size: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="logo">Harley</div>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">☰</label>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#estudios">Estudios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <button class="dark-toggle" onclick="toggleDarkMode()">🌙/☀️</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio">
+      <h1>Hola, soy Harley Jeffrey</h1>
+      <p>Desarrollador Frontend junior apasionado por la tecnología y el aprendizaje.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Bootstrap</li>
+        <li>Git &amp; GitHub</li>
+      </ul>
+    </section>
+
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+      <div class="card">
+        <h3>Blackjack 21</h3>
+        <p>Un juego simple de Blackjack hecho con JS.</p>
+      </div>
+      <div class="card">
+        <h3>Coolibrary</h3>
+        <p>Plataforma de preguntas y respuestas educativas.</p>
+      </div>
+    </section>
+
+    <section id="estudios">
+      <h2>Estudios</h2>
+      <p>Campuslands - Formación intensiva en desarrollo web.</p>
+      <p>Educación secundaria completa en Villanueva, Santander.</p>
+    </section>
+
+    <section id="contacto">
+      <h2>Guía de Contacto</h2>
+      <p>Email: harley@example.com</p>
+      <p>Teléfono: +57 300 000 0000</p>
+      <p>GitHub: <a href="https://github.com/harleyjeffrey" target="_blank">github.com/harleyjeffrey</a></p>
+    </section>
+  </main>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+</html>

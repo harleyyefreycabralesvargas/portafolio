@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #111;
+    color: white;
+}
+
+main {
+    margin-top: 60px;
+}
+
+section {
+    padding: 80px 20px;
+    text-align: center;
+    min-height: 100vh;
+}

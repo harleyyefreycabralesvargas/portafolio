@@ -1,0 +1,15 @@
+#proyectos {
+    background: #f1f8e9;
+}
+body.dark-mode #proyectos {
+  background-color: #222;
+  color: white;
+}
+.card {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

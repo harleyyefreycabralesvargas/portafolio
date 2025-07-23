@@ -1,0 +1,7 @@
+#contacto {
+    background: #ede7f6;
+}
+body.dark-mode #contacto {
+  background-color: #222;
+  color: white;
+}

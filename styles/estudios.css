@@ -1,0 +1,7 @@
+#estudios {
+    background: #fff3e0;
+}
+body.dark-mode #estudios {
+  background-color: #222;
+  color: white;
+}
