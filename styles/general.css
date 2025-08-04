@@ -5,8 +5,8 @@
 }
 
 body {
-    background-color: white;
-    color: black;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -21,6 +21,19 @@ main {
 
 section {
     padding: 80px 20px;
-    text-align: center;
     min-height: 100vh;
+}
+
+@font-face {
+    font-family: 'descripcion';
+    src: url('../letras/RETROACTIVE.ttf') ;
+  }
+
+@font-face {
+    font-family: 'barra_navegacion';
+    src: url('../letras/Super\ Frosting.ttf');
+  }
+a {
+    color: var(--link-color);
+    text-decoration: none;
 }

@@ -5,6 +5,7 @@ header {
     background-color: #111;
     padding: 10px 0;
     z-index: 1000;
+    height: 10%;
 }
 
 nav ul {
@@ -15,24 +16,30 @@ nav ul {
 
 nav ul li {
     margin: 0 15px;
+    height: 30%;
+    font-size: 4rem;
+    
+    font-family: 'barra_navegacion', sans-serif;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    color: #00BFFF;
     font-weight: bold;
     padding: 8px 12px;
     transition: background 0.3s;
+    height: 10%;
 }
 
 nav ul li a:hover {
-    background-color: #444;
+    background-color: #FFFFFF;
     border-radius: 5px;
 }
 
 :root {
-    --bg-color: #ffffff;
-    --text-color: #000000;
+    --bg-color: #000000;
+    --text-color: #ffffff;
     --nav-bg: #111111;
     --link-color: #ffffff;
 }
@@ -42,20 +49,4 @@ body.dark-mode {
     --text-color: #ffffff;
     --nav-bg: #ffffff;
     --link-color: #111111;
-}
-
-
-.dark-toggle {
-    background: none;
-    border: 2px solid var(--link-color);
-    color: var(--link-color);
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.dark-toggle:hover {
-    background: var(--link-color);
-    color: var(--nav-bg);
 }

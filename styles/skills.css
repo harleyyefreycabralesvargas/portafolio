@@ -1,9 +1,9 @@
 #skills {
-    background: #e0f7fa;
+    background: #000000;
 }
 body.dark-mode #skills {
-  background-color: #222;
-  color: white;
+    background-color: #000000;
+    color: white;
 }
 .skills {
     display: flex;

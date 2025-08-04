@@ -1,7 +1,60 @@
 #presentacion {
-    background: #f5f5f5;
+    background: #000000;
+    align-items: left !important
 }
 body.dark-mode #presentacion {
   background-color: #222;
   color: white;
+}
+
+.descripcion{
+  font-family: 'descripcion';
+  font-size: 3em;
+  color: #00BFFF;
+  text-shadow: 
+  2px 2px 4px #00BFFF
+}
+
+.texto-con-borde {
+  color: white;
+  text-shadow: 2px 2px 4px #00BFFF
+}
+.mis_datos{
+  display: flex;
+  flex-direction: row;;
+  margin-top: 0%;
+  margin-left: 5%;
+}
+.mi_foto{
+  width: 25%;
+  height: 15%;
+  border-radius: 100%;
+  margin-left: 5%;
+  margin-top: 5%;
+  border: 4px solid;
+  border-color: #00BFFF;
+}
+img:hover {
+  transform: scale(1.1);
+  border-color: #ffffff ;
+  transition: border-color 2s ease,transform 2s ease;
+}
+.datos_personales{
+  
+  text-align: left;
+  color: #00BFFF;
+  text-shadow: none;
+  margin-top: 7%;
+  font-size: 1.33em;
+  margin-left: 5%;
+}
+.datos_personales a {
+  color: #00BFFF;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.datos_personales a:hover {
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #bfdce6;
+  transition: color 0.3s, text-shadow 0.3s;
 }

@@ -1,12 +1,12 @@
 #proyectos {
-    background: #f1f8e9;
+    background: #000000;
 }
 body.dark-mode #proyectos {
   background-color: #222;
   color: white;
 }
 .card {
-    background: #fff;
+    background: #000000;
     padding: 20px;
     margin: 20px auto;
     max-width: 500px;
