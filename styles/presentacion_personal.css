@@ -1,16 +1,11 @@
-#presentacion {
-    background: #000000;
-    align-items: left !important
-}
-body.dark-mode #presentacion {
-  background-color: #222;
-  color: white;
-}
+
+
 
 .descripcion{
   font-family: 'descripcion';
+  margin-top: 10%;
   font-size: 3em;
-  color: #00BFFF;
+  color: #40a56f;
   text-shadow: 
   2px 2px 4px #00BFFF
 }

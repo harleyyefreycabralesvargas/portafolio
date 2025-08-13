@@ -1,10 +1,4 @@
-#proyectos {
-    background: #000000;
-}
-body.dark-mode #proyectos {
-  background-color: #222;
-  color: white;
-}
+
 .card {
     background: #000000;
     padding: 20px;

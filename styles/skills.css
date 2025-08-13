@@ -1,10 +1,4 @@
-#skills {
-    background: #000000;
-}
-body.dark-mode #skills {
-    background-color: #000000;
-    color: white;
-}
+
 .skills {
     display: flex;
     justify-content: center;

@@ -5,9 +5,12 @@
 }
 
 body {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    transition: background-color 0.3s, color 0.3s;
+    background-image: url("../img/unnamed.png");
+     min-height: 100vh; /* Ocupa mínimo toda la pantalla */
+  background-size: cover;       /* La imagen se adapta */
+  background-repeat: no-repeat; /* No se repite */
+  background-position: center;  /* Centrada */
+  background-attachment: fixed; 
 }
 
 body.dark-mode {
@@ -19,10 +22,6 @@ main {
     margin-top: 60px;
 }
 
-section {
-    padding: 80px 20px;
-    min-height: 100vh;
-}
 
 @font-face {
     font-family: 'descripcion';
